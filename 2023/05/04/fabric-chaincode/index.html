@@ -16,21 +16,22 @@
   <meta name="author" content="10205501409陈沁文">
   <meta name="keywords" content="">
   
-    <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+    <meta name="description" content="peer chaincodepeer chaincode命令允许管理员执行与一个节点上运行有关的链码，例如安装，实例化，调用，包装，查询和升级链码。 语法peer chaincode命令有以下子命令：  install instantiate invoke list package query signpackage upgrade  不同的子命令选项（安装，实例化）牵涉到与一个peer相关的不同">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="http://example.com/2023/04/28/hello-world/index.html">
+<meta property="og:title" content="fabric_chaincode">
+<meta property="og:url" content="http://example.com/2023/05/04/fabric-chaincode/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta property="og:description" content="peer chaincodepeer chaincode命令允许管理员执行与一个节点上运行有关的链码，例如安装，实例化，调用，包装，查询和升级链码。 语法peer chaincode命令有以下子命令：  install instantiate invoke list package query signpackage upgrade  不同的子命令选项（安装，实例化）牵涉到与一个peer相关的不同">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2023-04-28T05:50:28.776Z">
-<meta property="article:modified_time" content="2023-04-28T05:50:28.776Z">
+<meta property="article:published_time" content="2023-05-04T07:12:19.000Z">
+<meta property="article:modified_time" content="2023-05-04T07:19:23.363Z">
 <meta property="article:author" content="10205501409陈沁文">
+<meta property="article:tag" content="fabric">
 <meta name="twitter:card" content="summary_large_image">
   
   
   
-  <title>Hello World - Hexo</title>
+  <title>fabric_chaincode - Hexo</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -196,7 +197,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="Hello World"></span>
+            <span id="subtitle" data-typed-text="fabric_chaincode"></span>
           
         </div>
 
@@ -207,8 +208,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2023-04-28 13:50" pubdate>
-          2023年4月28日 下午
+        <time datetime="2023-05-04 15:12" pubdate>
+          2023年5月4日 下午
         </time>
       </span>
     
@@ -219,7 +220,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          367 字
+          834 字
         
       </span>
     
@@ -230,7 +231,7 @@
         
         
         
-          4 分钟
+          7 分钟
         
       </span>
     
@@ -268,24 +269,41 @@
         <div id="board">
           <article class="post-content mx-auto">
             <!-- SEO header -->
-            <h1 style="display: none">Hello World</h1>
+            <h1 style="display: none">fabric_chaincode</h1>
             
             
               <div class="markdown-body">
                 
-                <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo new <span class="hljs-string">&quot;My New Post&quot;</span><br></code></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo server<br></code></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo generate<br></code></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo deploy<br></code></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+                <h1 id="peer-chaincode"><a href="#peer-chaincode" class="headerlink" title="peer chaincode"></a>peer chaincode</h1><p><code>peer chaincode</code>命令允许管理员执行与一个节点上运行有关的链码，例如安装，实例化，调用，包装，查询和升级链码。</p>
+<h2 id="语法"><a href="#语法" class="headerlink" title="语法"></a>语法</h2><p><code>peer chaincode</code>命令有以下子命令：</p>
+<ul>
+<li>install</li>
+<li>instantiate</li>
+<li>invoke</li>
+<li>list</li>
+<li>package</li>
+<li>query</li>
+<li>signpackage</li>
+<li>upgrade</li>
+</ul>
+<p>不同的子命令选项（安装，实例化）牵涉到与一个peer相关的不同链码操作。例如，用<code>peer chaincode install</code>子命令选项在节点上安装一个链码，或者用<code>peer chaincode query</code>子命令选项为一节点上账本的当前值查询链码。</p>
+<p>本主题将描述每个节点链码子命令以及它们的选项。</p>
+<h2 id="参数"><a href="#参数" class="headerlink" title="参数"></a>参数</h2><p>每个子命令都有一套专门对应各子命令的参数，以及一套涉及到所有<code>peer chaincode</code>子命令的全局参数。但并不是所有的子命令都会使用这些参数。比如，<code>query</code>子命令就不需要<code>--orderer</code>参数。</p>
+<p>每个参数都会和与其相关的子命令一起来解析。全局参数包括</p>
+<p>*<code>--cafile &lt;string&gt;</code></p>
+<p>  是通往一文件的路径，该文件包含了用于排序端点的PEM编码受信任证书</p>
+<p>*<code>--certfile &lt;string&gt;</code></p>
+<p>  是通往一文件的路径，该文件包含了用于和orderer端点进行相互TLS通信的PEM编码X509公钥。</p>
+<p>*<code>--keyfile &lt;string&gt;</code></p>
+<p>  是通往一文件的路径，该文件包含了用于和orderer端点进行相互TLS通信的PEM编码私钥</p>
+<p>*<code>-o</code>or<code>--orderer &lt;string&gt;</code></p>
+<p>  排序服务端点被指明为<code>&lt;hostname or IP address&gt;:&lt;port&gt;</code></p>
+<p>*<code>--ordererTLSHostnameOverride &lt;string&gt;</code></p>
+<p>  验证与orderer的TLS连接时要用到的主机名覆盖</p>
+<p>*<code>--tls</code></p>
+<p>  当与orderer端点通信时用TLS</p>
+<p>*<code>--transient &lt;string&gt;</code></p>
+<p>  JSON编码中的参数的瞬时映射</p>
 
                 
               </div>
@@ -295,6 +313,13 @@
               <div class="post-metas my-3">
   
   
+    <div class="post-meta">
+      <i class="iconfont icon-tags"></i>
+      
+        <a href="/tags/fabric/">#fabric</a>
+      
+    </div>
+  
 </div>
 
 
@@ -303,8 +328,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>Hello World</div>
-      <div>http://example.com/2023/04/28/hello-world/</div>
+      <div>fabric_chaincode</div>
+      <div>http://example.com/2023/05/04/fabric-chaincode/</div>
     </div>
     <div class="license-meta">
       
@@ -316,7 +341,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>发布于</div>
-          <div>2023年4月28日</div>
+          <div>2023年5月4日</div>
         </div>
       
       
@@ -348,15 +373,15 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2023/04/28/holiday/" title="holiday">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">holiday</span>
-                        <span class="visible-mobile">上一篇</span>
-                      </a>
-                    
                   </article>
                   <article class="post-next col-6">
                     
+                    
+                      <a href="/2023/04/28/holiday/" title="holiday">
+                        <span class="hidden-mobile">holiday</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
                     
                   </article>
                 </div>
