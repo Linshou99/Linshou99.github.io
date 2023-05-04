@@ -16,22 +16,21 @@
   <meta name="author" content="John Doe">
   <meta name="keywords" content="">
   
-    <meta name="description" content="放假了。">
+    <meta name="description" content="peer chaincodepeer chaincode命令允许管理员执行与一个节点上运行有关的链码，例如安装，实例化，调用，包装，查询和升级链码。 语法peer chaincode命令有以下子命令：  install instantiate invoke list package query signpackage upgrade  不同的子命令选项（安装，实例化）牵涉到与一个peer相关的不同">
 <meta property="og:type" content="article">
-<meta property="og:title" content="blockchain_fabric">
-<meta property="og:url" content="http://example.com/2023/04/28/blockchain-fabric/index.html">
+<meta property="og:title" content="fabric_end2end">
+<meta property="og:url" content="http://example.com/2023/05/04/fabric-end2end/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="放假了。">
+<meta property="og:description" content="peer chaincodepeer chaincode命令允许管理员执行与一个节点上运行有关的链码，例如安装，实例化，调用，包装，查询和升级链码。 语法peer chaincode命令有以下子命令：  install instantiate invoke list package query signpackage upgrade  不同的子命令选项（安装，实例化）牵涉到与一个peer相关的不同">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2023-04-28T06:26:26.000Z">
-<meta property="article:modified_time" content="2023-04-28T06:29:27.572Z">
+<meta property="article:published_time" content="2023-05-04T07:12:19.000Z">
+<meta property="article:modified_time" content="2023-05-04T07:15:53.704Z">
 <meta property="article:author" content="John Doe">
-<meta property="article:tag" content="课业笔记">
 <meta name="twitter:card" content="summary_large_image">
   
   
   
-  <title>blockchain_fabric - Hexo</title>
+  <title>fabric_end2end - Hexo</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -197,7 +196,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="blockchain_fabric"></span>
+            <span id="subtitle" data-typed-text="fabric_end2end"></span>
           
         </div>
 
@@ -208,8 +207,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2023-04-28 14:26" pubdate>
-          2023年4月28日 下午
+        <time datetime="2023-05-04 15:12" pubdate>
+          2023年5月4日 下午
         </time>
       </span>
     
@@ -220,7 +219,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          4 字
+          834 字
         
       </span>
     
@@ -231,7 +230,7 @@
         
         
         
-          1 分钟
+          7 分钟
         
       </span>
     
@@ -269,12 +268,41 @@
         <div id="board">
           <article class="post-content mx-auto">
             <!-- SEO header -->
-            <h1 style="display: none">blockchain_fabric</h1>
+            <h1 style="display: none">fabric_end2end</h1>
             
             
               <div class="markdown-body">
                 
-                <p>放假了。</p>
+                <h1 id="peer-chaincode"><a href="#peer-chaincode" class="headerlink" title="peer chaincode"></a>peer chaincode</h1><p><code>peer chaincode</code>命令允许管理员执行与一个节点上运行有关的链码，例如安装，实例化，调用，包装，查询和升级链码。</p>
+<h2 id="语法"><a href="#语法" class="headerlink" title="语法"></a>语法</h2><p><code>peer chaincode</code>命令有以下子命令：</p>
+<ul>
+<li>install</li>
+<li>instantiate</li>
+<li>invoke</li>
+<li>list</li>
+<li>package</li>
+<li>query</li>
+<li>signpackage</li>
+<li>upgrade</li>
+</ul>
+<p>不同的子命令选项（安装，实例化）牵涉到与一个peer相关的不同链码操作。例如，用<code>peer chaincode install</code>子命令选项在节点上安装一个链码，或者用<code>peer chaincode query</code>子命令选项为一节点上账本的当前值查询链码。</p>
+<p>本主题将描述每个节点链码子命令以及它们的选项。</p>
+<h2 id="参数"><a href="#参数" class="headerlink" title="参数"></a>参数</h2><p>每个子命令都有一套专门对应各子命令的参数，以及一套涉及到所有<code>peer chaincode</code>子命令的全局参数。但并不是所有的子命令都会使用这些参数。比如，<code>query</code>子命令就不需要<code>--orderer</code>参数。</p>
+<p>每个参数都会和与其相关的子命令一起来解析。全局参数包括</p>
+<p>*<code>--cafile &lt;string&gt;</code></p>
+<p>  是通往一文件的路径，该文件包含了用于排序端点的PEM编码受信任证书</p>
+<p>*<code>--certfile &lt;string&gt;</code></p>
+<p>  是通往一文件的路径，该文件包含了用于和orderer端点进行相互TLS通信的PEM编码X509公钥。</p>
+<p>*<code>--keyfile &lt;string&gt;</code></p>
+<p>  是通往一文件的路径，该文件包含了用于和orderer端点进行相互TLS通信的PEM编码私钥</p>
+<p>*<code>-o</code>or<code>--orderer &lt;string&gt;</code></p>
+<p>  排序服务端点被指明为<code>&lt;hostname or IP address&gt;:&lt;port&gt;</code></p>
+<p>*<code>--ordererTLSHostnameOverride &lt;string&gt;</code></p>
+<p>  验证与orderer的TLS连接时要用到的主机名覆盖</p>
+<p>*<code>--tls</code></p>
+<p>  当与orderer端点通信时用TLS</p>
+<p>*<code>--transient &lt;string&gt;</code></p>
+<p>  JSON编码中的参数的瞬时映射</p>
 
                 
               </div>
@@ -284,13 +312,6 @@
               <div class="post-metas my-3">
   
   
-    <div class="post-meta">
-      <i class="iconfont icon-tags"></i>
-      
-        <a href="/tags/%E8%AF%BE%E4%B8%9A%E7%AC%94%E8%AE%B0/">#课业笔记</a>
-      
-    </div>
-  
 </div>
 
 
@@ -299,8 +320,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>blockchain_fabric</div>
-      <div>http://example.com/2023/04/28/blockchain-fabric/</div>
+      <div>fabric_end2end</div>
+      <div>http://example.com/2023/05/04/fabric-end2end/</div>
     </div>
     <div class="license-meta">
       
@@ -312,7 +333,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>发布于</div>
-          <div>2023年4月28日</div>
+          <div>2023年5月4日</div>
         </div>
       
       
@@ -344,18 +365,12 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2023/05/04/fabric-end2end/" title="fabric_end2end">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">fabric_end2end</span>
-                        <span class="visible-mobile">上一篇</span>
-                      </a>
-                    
                   </article>
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2023/04/28/hello-world/" title="Hello World">
-                        <span class="hidden-mobile">Hello World</span>
+                      <a href="/2023/04/28/blockchain-fabric/" title="blockchain_fabric">
+                        <span class="hidden-mobile">blockchain_fabric</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
