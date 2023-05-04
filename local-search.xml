@@ -11,6 +11,12 @@
     <content type="html"><![CDATA[<h1 id="peer-chaincode"><a href="#peer-chaincode" class="headerlink" title="peer chaincode"></a>peer chaincode</h1><p><code>peer chaincode</code>命令允许管理员执行与一个节点上运行有关的链码，例如安装，实例化，调用，包装，查询和升级链码。</p><h2 id="语法"><a href="#语法" class="headerlink" title="语法"></a>语法</h2><p><code>peer chaincode</code>命令有以下子命令：</p><ul><li>install</li><li>instantiate</li><li>invoke</li><li>list</li><li>package</li><li>query</li><li>signpackage</li><li>upgrade</li></ul><p>不同的子命令选项（安装，实例化）牵涉到与一个peer相关的不同链码操作。例如，用<code>peer chaincode install</code>子命令选项在节点上安装一个链码，或者用<code>peer chaincode query</code>子命令选项为一节点上账本的当前值查询链码。</p><p>本主题将描述每个节点链码子命令以及它们的选项。</p><h2 id="参数"><a href="#参数" class="headerlink" title="参数"></a>参数</h2><p>每个子命令都有一套专门对应各子命令的参数，以及一套涉及到所有<code>peer chaincode</code>子命令的全局参数。但并不是所有的子命令都会使用这些参数。比如，<code>query</code>子命令就不需要<code>--orderer</code>参数。</p><p>每个参数都会和与其相关的子命令一起来解析。全局参数包括</p><p>*<code>--cafile &lt;string&gt;</code></p><p>  是通往一文件的路径，该文件包含了用于排序端点的PEM编码受信任证书</p><p>*<code>--certfile &lt;string&gt;</code></p><p>  是通往一文件的路径，该文件包含了用于和orderer端点进行相互TLS通信的PEM编码X509公钥。</p><p>*<code>--keyfile &lt;string&gt;</code></p><p>  是通往一文件的路径，该文件包含了用于和orderer端点进行相互TLS通信的PEM编码私钥</p><p>*<code>-o</code>or<code>--orderer &lt;string&gt;</code></p><p>  排序服务端点被指明为<code>&lt;hostname or IP address&gt;:&lt;port&gt;</code></p><p>*<code>--ordererTLSHostnameOverride &lt;string&gt;</code></p><p>  验证与orderer的TLS连接时要用到的主机名覆盖</p><p>*<code>--tls</code></p><p>  当与orderer端点通信时用TLS</p><p>*<code>--transient &lt;string&gt;</code></p><p>  JSON编码中的参数的瞬时映射</p>]]></content>
     
     
+    <categories>
+      
+      <category>Blockchain</category>
+      
+    </categories>
+    
     
     <tags>
       
@@ -29,6 +35,12 @@
     
     <content type="html"><![CDATA[<p>放假了。</p>]]></content>
     
+    
+    <categories>
+      
+      <category>Nonsense</category>
+      
+    </categories>
     
     
     <tags>
