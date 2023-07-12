@@ -25,7 +25,7 @@
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="http://example.com/img/%E6%80%BB%E7%BB%93%E4%B8%8E%E5%8F%8D%E6%80%9D/1.jpg">
 <meta property="article:published_time" content="2023-05-04T08:15:23.000Z">
-<meta property="article:modified_time" content="2023-05-04T08:34:09.575Z">
+<meta property="article:modified_time" content="2023-07-12T13:31:21.743Z">
 <meta property="article:author" content="10205501409陈沁文">
 <meta property="article:tag" content="实验报告">
 <meta name="twitter:card" content="summary_large_image">
@@ -250,7 +250,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          434 字
+          814 字
         
       </span>
     
@@ -261,7 +261,7 @@
         
         
         
-          4 分钟
+          7 分钟
         
       </span>
     
@@ -337,6 +337,8 @@
 <h2 id="三、总结或反思"><a href="#三、总结或反思" class="headerlink" title="三、总结或反思"></a><strong>三、总结或反思</strong></h2><h4 id="博客框架及其选取原因"><a href="#博客框架及其选取原因" class="headerlink" title="博客框架及其选取原因"></a>博客框架及其选取原因</h4><p>第一次使用博客，选取Hexo作为框架搭建。原因是Hexo是一个快速、简洁且高效的博客框架，基于 Node.js开发，使用 Markdown 解析文章，并生成静态页面，非常方便，且页面可直接存在GitHub Pages。</p>
 <h4 id="博客主题及其选取原因"><a href="#博客主题及其选取原因" class="headerlink" title="博客主题及其选取原因"></a>博客主题及其选取原因</h4><p>博客主题选取fluid,这是因为他的页面布局设计简洁优雅，且提供大量定制化配置项，更具个性化。</p>
 <h4 id="博客样式设计及其美学考量"><a href="#博客样式设计及其美学考量" class="headerlink" title="博客样式设计及其美学考量"></a>博客样式设计及其美学考量</h4><p>更换了几张好看的图…</p>
+<h4 id="优化"><a href="#优化" class="headerlink" title="优化"></a>优化</h4><p>category页面添加下拉菜单可以直接选择分类</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><code class="hljs yaml"><span class="hljs-attr">menu:</span><br>    <span class="hljs-bullet">-</span> &#123; <span class="hljs-attr">key:</span> <span class="hljs-string">&quot;category&quot;</span>, <span class="hljs-attr">link:</span> <span class="hljs-string">&quot;/categories/&quot;</span>, <span class="hljs-attr">icon:</span> <span class="hljs-string">&quot;iconfont icon-category-fill&quot;</span>,<br>	<span class="hljs-attr">submenu:</span> [<br>        &#123; <span class="hljs-attr">key:</span> <span class="hljs-string">&#x27;Blockchain&#x27;</span>, <span class="hljs-attr">link:</span> <span class="hljs-string">&quot;/categories/Blockchain&quot;</span> &#125;,<br>        &#123; <span class="hljs-attr">key:</span> <span class="hljs-string">&#x27;Nonsense&#x27;</span>, <span class="hljs-attr">link:</span> <span class="hljs-string">&quot;/categories/Nonsense&quot;</span> &#125;,<br>        &#123; <span class="hljs-attr">key:</span> <span class="hljs-string">&#x27;实验报告&#x27;</span>, <span class="hljs-attr">link:</span> <span class="hljs-string">&quot;/categories/实验报告&quot;</span> &#125;<br>      ] &#125;<br></code></pre></td></tr></table></figure>
 
                 
               </div>
@@ -443,6 +445,41 @@
             </div>
 
             
+  
+  
+    <article id="comments" lazyload>
+      
+  <script type="text/javascript">
+    Fluid.utils.loadComments('#comments', function() {
+      var light = 'github-light';
+      var dark = 'github-dark';
+      var schema = document.documentElement.getAttribute('data-user-color-scheme');
+      if (schema === 'dark') {
+        schema = dark;
+      } else {
+        schema = light;
+      }
+      window.UtterancesThemeLight = light;
+      window.UtterancesThemeDark = dark;
+      var s = document.createElement('script');
+      s.setAttribute('src', 'https://utteranc.es/client.js');
+      s.setAttribute('repo', 'Linshou99/Linshou99.github.io');
+      s.setAttribute('issue-term', 'title');
+      
+      s.setAttribute('label', 'utterances');
+      
+      s.setAttribute('theme', schema);
+      s.setAttribute('crossorigin', 'anonymous');
+      document.getElementById('comments').appendChild(s);
+    })
+  </script>
+  <noscript>Please enable JavaScript to view the comments</noscript>
+
+
+    </article>
+  
+
+
           </article>
         </div>
       </div>
